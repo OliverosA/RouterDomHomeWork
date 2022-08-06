@@ -20,23 +20,22 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route
-            path='/react'
-            exact
-            element={<RInfo info={data.ReactInformation} />}
-          />
-          <Route
-            path='/core'
-            exact
-            element={<Core info={data.CoreCodeInformation} />}
-          />
-          <Route
-            path='/hello'
-            exact
-            element={<Hello info={data.HelloInformation} />}
-          />
-        </Route>
+        <Route path='/' element={<Layout />} />
+        <Route
+          path='/react'
+          exact
+          element={<RInfo info={data.ReactInformation} />}
+        />
+        <Route
+          path='/core'
+          exact
+          element={<Core info={data.CoreCodeInformation} />}
+        />
+        <Route
+          path='/hello'
+          exact
+          element={<Hello info={data.HelloInformation} />}
+        />
       </Routes>
     </BrowserRouter>
   );
